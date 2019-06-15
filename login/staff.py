@@ -57,7 +57,7 @@ bot = [clientMID]
 #=====================================================================
 #=====================================================================
 loop = asyncio.get_event_loop()
-admin =["u79a6284e9ef959e88784874c6b662c9a"]
+admin =["u083bdc9ca7257b41cd4d1de933a5ad8e"]
 #ABC = [haha,hihi,ckck]
 botStart = time.time()
 msg_image={}
@@ -1268,7 +1268,7 @@ async def clientBot(op):
                                             "aspectMode": "fit",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                                "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                             }
                                         },
                                         "body": {
@@ -1408,7 +1408,7 @@ async def clientBot(op):
                                     client.acceptGroupInvitationByTicket(group.id,ticket_id)
                                     client.leaveGroup(group.id)
                     elif cmd == "huftt":
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             time.sleep(10)
                             p = client.getProfile()
                             p.displayName = "DI BAJAK NONAME"
@@ -1430,7 +1430,7 @@ async def clientBot(op):
                             while True:
                                 client.updateProfile(p)
                     elif cmd== '#user @bye':
-                        if msg._from in ["u79a6284e9ef959e88784874c6b662c9a"] and msg.toType == 2:
+                        if msg._from in ["u083bdc9ca7257b41cd4d1de933a5ad8e"] and msg.toType == 2:
                             try:
                                 client.sendMention(to, "Bye bye @!","",[msg._from])
                                 client.leaveGroup(to)
@@ -1497,7 +1497,7 @@ async def clientBot(op):
                             sver = stickers2[sticker]["STKVER"]
                             a = client.shop.getProduct(packageID=int(spkg), language='ID', country='ID')
                             if a.hasAnimation == True:data = {"type": "template","altText": "{} sent a sticker.".format(client.getProfile().displayName),"template": {"type": "image_carousel","columns": [{"imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/IOS/sticker_animation@2x.png".format(sid),"size": "full","action": {"type": "uri","uri": "http://line.me/ti/p/~melodic404"}}]}}
-                            else:data = {"type": "template","altText": "{} sent a sticker.".format(client.getProfile().displayName),"template": {"type": "image_carousel","columns": [{"imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/android/sticker@2x.png".format(sid),"size": "full","action": {"type": "uri","uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"}}]}}
+                            else:data = {"type": "template","altText": "{} sent a sticker.".format(client.getProfile().displayName),"template": {"type": "image_carousel","columns": [{"imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/android/sticker@2x.png".format(sid),"size": "full","action": {"type": "uri","uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"}}]}}
                             sendTemplate(to,data)
                     except Exception as e:
                         print(e)
@@ -1518,7 +1518,7 @@ async def clientBot(op):
                                     "imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/IOS/sticker@2x.png".format(sid),
                                     "action": {
                                         "type": "uri",
-                                        "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a",
+                                        "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e",
                                         "area": {
                                             "x": 520,
                                             "y": 0,
@@ -2161,7 +2161,7 @@ async def clientBot(op):
                                         "aspectMode": "fit",
                                         "action": {
                                             "type": "uri",
-                                            "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                            "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                         }
                                     },
                                     "body": {
@@ -2644,7 +2644,7 @@ async def clientBot(op):
                                 days = (str(future - today))
                                 comma = days.find(",")
                                 days = days[:comma]
-                                khietag = "u79a6284e9ef959e88784874c6b662c9a"
+                                khietag = "u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 h = client.getContact(clientMID)
                                 groups = client.getGroupIdsJoined()
                                 contactlist = client.getAllContactIds()
@@ -3056,7 +3056,7 @@ async def clientBot(op):
                             client.sendReplyMessage(msg.id,to,"Staff List :\n\n"+mc+"\nTotal「%s」" %(str(len(staff))))
                         if cmd == "speed":
                             start = time.time()
-                            client.sendMessage("u79a6284e9ef959e88784874c6b662c9a", "Testing..")
+                            client.sendMessage("u083bdc9ca7257b41cd4d1de933a5ad8e", "Testing..")
                             elapsed_time = time.time() - start
                             took = time.time() - start
                             a = " 「 Speed 」\nType: Speed♪\n - Took : %.3fms♪\n - Taken: %.10f♪" % (took,elapsed_time)
@@ -3066,7 +3066,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to,data)
@@ -3344,7 +3344,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3362,7 +3362,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3378,7 +3378,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3399,7 +3399,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3454,7 +3454,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3489,7 +3489,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3507,7 +3507,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3530,7 +3530,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3551,7 +3551,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3570,7 +3570,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3634,7 +3634,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3664,7 +3664,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3683,7 +3683,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3703,7 +3703,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3722,7 +3722,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3740,7 +3740,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3758,7 +3758,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3776,7 +3776,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3795,7 +3795,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3812,7 +3812,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3830,7 +3830,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3848,7 +3848,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3866,7 +3866,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3882,7 +3882,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             sendTemplate(to, data)
@@ -4535,7 +4535,7 @@ async def clientBot(op):
                                     "sentBy": {
                                         "label": "{}".format(client.getContact(clientMID).displayName),
                                         "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                        "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                        "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                     }
                                 }
                                 bcTemplate2(friend, data)
@@ -4571,7 +4571,7 @@ async def clientBot(op):
                                         "aspectMode": "cover",
                                         "action": {
                                             "type": "uri",
-                                            "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                            "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                         }
                                     },
                                     "body": {
@@ -4850,7 +4850,7 @@ async def clientBot(op):
                                             "aspectMode": "cover",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                                "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                             }
                                         },
                                         "body": {
@@ -7565,7 +7565,7 @@ async def clientBot(op):
                                 sver = stickers2[sticker]["STKVER"]
                                 a = client.shop.getProduct(packageID=int(spkg), language='ID', country='ID')
                                 if a.hasAnimation == True:data = {"type": "template","altText": "{} sent a sticker.".format(client.getProfile().displayName),"template": {"type": "image_carousel","columns": [{"imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/IOS/sticker_animation@2x.png".format(sid),"size": "full","action": {"type": "uri","uri": "http://line.me/ti/p/~melodic404"}}]}}
-                                else:data = {"type": "template","altText": "{} sent a sticker.".format(client.getProfile().displayName),"template": {"type": "image_carousel","columns": [{"imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/android/sticker@2x.png".format(sid),"size": "full","action": {"type": "uri","uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"}}]}}
+                                else:data = {"type": "template","altText": "{} sent a sticker.".format(client.getProfile().displayName),"template": {"type": "image_carousel","columns": [{"imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/android/sticker@2x.png".format(sid),"size": "full","action": {"type": "uri","uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"}}]}}
                                 sendTemplate(to,data)
                         except Exception as e:
                             print(e)
@@ -7586,7 +7586,7 @@ async def clientBot(op):
                                         "imageUrl": "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/IOS/sticker@2x.png".format(sid),
                                         "action": {
                                             "type": "uri",
-                                            "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a",
+                                            "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e",
                                             "area": {
                                                 "x": 520,
                                                 "y": 0,
