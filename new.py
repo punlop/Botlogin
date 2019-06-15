@@ -50,8 +50,8 @@ khieMID = khie.getProfile().mid
 #=====================================================================
 #=====================================================================
 loop = asyncio.get_event_loop()
-admin =["u79a6284e9ef959e88784874c6b662c9a"]
-myAdmin = ["u79a6284e9ef959e88784874c6b662c9a"]
+admin =["u083bdc9ca7257b41cd4d1de933a5ad8e"]
+myAdmin = ["u083bdc9ca7257b41cd4d1de933a5ad8e"]
 botStart = time.time()
 msg_dict = {}
 temp_flood = {}
@@ -599,7 +599,7 @@ async def khieBot(op):
 #==========================================
 #==========================================
                     elif cmd.startswith("#savefile"):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             text = removeCmd("#savefile", text)
                             sep = text.split(" ")
                             key = text.replace(sep[0] + " ", text)
@@ -612,7 +612,7 @@ async def khieBot(op):
 #                    elif cmd == "help":
 #                        khie.sendMessage(to, "Type #help", {'QUICK_REPLY': '{"items": [{"type": "action","useTintColor": False,"imageUrl": "https://boteater.co/jpg-t8vyjfvq.jpg","action": {"type": "message","label": "Help","text": "#help"}},{"type": "action","useTintColor": False,"imageUrl": "https://boteater.co/jpg-t8vyjfvq.jpg","action": {"type": "message","label": "Mention","text": "#mention"}}]}'}, 0)
                     elif cmd == "#change cover":
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             settings["changeCoverProfile"] = True
                             khie.sendMessage(to,"Send a Image to change cover.")
 #==========================================
@@ -646,7 +646,7 @@ async def khieBot(op):
                         sendTemplate(to, data)
 #==========================================
                     elif cmd.startswith("#down "):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                            number = removeCmd("#down", text)
                            if len(number) > 0:
                                if number.isdigit():
@@ -676,7 +676,7 @@ async def khieBot(op):
                             "sentBy": {
                                 "label": "</> Noob Coder",
                                 "iconUrl": "https://obs.line-scdn.net/{}".format(khie.getContact(khieMID).pictureStatus),
-                                "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                             }
                         }
                         sendTemplate(to, data)
@@ -704,7 +704,7 @@ async def khieBot(op):
                                             "spacing": "md",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a",
+                                                "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e",
                                                 },
                                             "contents": [
                                                 {
@@ -799,7 +799,7 @@ async def khieBot(op):
                                             "spacing": "md",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a",
+                                                "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e",
                                                 },
                                             "contents": [
                                                 {
@@ -875,7 +875,7 @@ async def khieBot(op):
                         }
                         sendTemplate(to, data)
                     elif cmd == "cmd":
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             ret = "Help Message\n\n"
                             ret += "  • #glist\n"
                             ret += "  • #skill\n"
@@ -892,7 +892,7 @@ async def khieBot(op):
                                 "sentBy": {
                                     "label": "</> Noob Coder",
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(khie.getContact(khieMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                         sendTemplate(to, data)
@@ -901,7 +901,7 @@ async def khieBot(op):
 #==========================================
 #==========================================
                     elif cmd.startswith("#leave "):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             number = removeCmd("#leave", text)
                             groups = khie.getGroupIdsJoined()
                             try:
@@ -921,7 +921,7 @@ async def khieBot(op):
                         sep = text.split(" ")
                         txt = text.replace(sep[0] + " ","")
                         contact = khie.getContact(sender)
-                        owner = "u79a6284e9ef959e88784874c6b662c9a"
+                        owner = "u083bdc9ca7257b41cd4d1de933a5ad8e"
                         mat_ = "Sender: @!"
                         mat_ += "\nMessage: {}".format(txt)
                         mat = {
@@ -953,7 +953,7 @@ async def khieBot(op):
 #                        khie.sendMention(msg.to, 'Type : LogOut selfbot\n\nHai @! Sorry You are not listed In List Free',' ', [msg._from])
 #==========================================
                     elif cmd.startswith("#name "):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             string = removeCmd("#name", text)
                             if len(string) <= 10000000000:
                                 pname = khie.getContact(sender).displayName
@@ -962,7 +962,7 @@ async def khieBot(op):
                                 khie.updateProfile(profile)
                                 khie.sendMessage(to, "「 Update Name 」\nStatus : Success\nFrom : "+str(pname)+"\nTo :"+str(string))
                     elif cmd.startswith("#status "):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             string = removeCmd("#status", text)
                             if len(string) <= 10000000000:
                                 pname = khie.getContact(sender).statusMessage
@@ -973,14 +973,14 @@ async def khieBot(op):
 #==========================================
 #==========================================
                     elif cmd == "ping":
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             khie.sendMention(to, "PONG ! @!","",[msg._from])
 #==========================================
 #==========================================
 #==========================================
 #==========================================
                     elif cmd == "#join on":
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             if settings["autoJoin"] == True:
                                 msgs=" 「 Join 」\nJoin already Enable♪"
                             else:
@@ -988,7 +988,7 @@ async def khieBot(op):
                                 settings["autoJoin"] = True
                             khie.sendMessage(to, msgs)
                     elif cmd == "#join off":
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             if settings["autoJoin"] == False:
                                 msgs=" 「 Join 」\nJoin already DISABLED♪"
                             else:
@@ -1014,7 +1014,7 @@ async def khieBot(op):
                                         "size": "full",
                                         "action": {
                                             "type": "uri",
-                                            "uri": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                            "uri": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                         }
                                     }
                                 ]
@@ -1025,7 +1025,7 @@ async def khieBot(op):
 #==========================================
 #==========================================
                     elif cmd.startswith("#skill "):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                            sep = text.split(" ")
                            midn = text.replace(sep[0] + " ","")
                            hmm = text.lower()
@@ -1042,7 +1042,7 @@ async def khieBot(op):
                            for target in targets:
                                khie.kickoutFromGroup(msg.to,[target])
                     elif cmd.startswith("#slain "):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                            sep = text.split(" ")
                            midn = text.replace(sep[0] + " ","")
                            hmm = text.lower()
@@ -1066,7 +1066,7 @@ async def khieBot(op):
 #==========================================
 #==========================================
                     elif cmd.startswith("#cvp"):
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             link = removeCmd("helper:cvp", text)
                             contact = khie.getContact(sender)
                             khie.sendMessage(to, "Type: Profile\n • Detail: Change video url\n • Status: Download...")
@@ -1095,7 +1095,7 @@ async def khieBot(op):
                             h = khie.getContact(khieMID)
                             groups = khie.getGroupIdsJoined()
                             contactlist = khie.getAllContactIds()
-                            khietag = "u79a6284e9ef959e88784874c6b662c9a"
+                            khietag = "u083bdc9ca7257b41cd4d1de933a5ad8e"
                             pedopil = "u21d04f683a70ee8776c4c58a0358c204"
                             kontak = khie.getContacts(contactlist)
                             favorite = khie.getFavoriteMids()
@@ -1141,17 +1141,17 @@ async def khieBot(op):
 #==========================================
 #==========================================
                     elif cmd == "#debug":
-                       if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                       if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             khie.sendMessage(to, debug())
                     elif cmd == "speed":
                         start = time.time()
-                        khie.sendMessage("u79a6284e9ef959e88784874c6b662c9a", '</>')
+                        khie.sendMessage("u083bdc9ca7257b41cd4d1de933a5ad8e", '</>')
                         elapsed_time = time.time() - start
                         khie.sendMessage(to,"Time:\n%s"%str(round(elapsed_time,5)))
 #==========================================
 #==========================================
                     elif cmd == "#glist":
-                       if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                       if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             key = settings["keyCommand"].title()
                             if settings['setKey'] == False:key = ''
                             gid = khie.getGroupIdsJoined()
@@ -1170,7 +1170,7 @@ async def khieBot(op):
                                 khie.generateReplyMessage(msg.id)
                                 khie.sendReplyMessage(msg.id, to,'{}'.format(ret[aa*10000 : (aa+1)*10000]))
                     elif cmd.startswith("#bcast"):
-                      if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                      if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                         tod = text.split(" ")
                         hey = text.replace(tod[0] + " ", "")
                         text = "{}".format(hey)
@@ -1183,14 +1183,14 @@ async def khieBot(op):
                                 "sentBy": {
                                     "label": "Group Broadcast",
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(khie.getContact(khieMID).pictureStatus),
-                                    "linkUrl": "line://nv/profilePopup/mid=u79a6284e9ef959e88784874c6b662c9a"
+                                    "linkUrl": "line://nv/profilePopup/mid=u083bdc9ca7257b41cd4d1de933a5ad8e"
                                 }
                             }
                             bcTemplate(gr, data)
                             time.sleep(1)
                         khie.sendMessage(to, "Succes Group cast to {} group ".format(str(len(groups))))
                     elif cmd.startswith("#openqr "):
-                      if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                      if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             number = removeCmd("#openqr", text)
                             groups = khie.getGroupIdsJoined()
                             try:
@@ -1426,7 +1426,7 @@ async def khieBot(op):
 #==========================================
 #==========================================
                     elif text.lower() == "#reboot":
-                        if msg._from in "u79a6284e9ef959e88784874c6b662c9a":
+                        if msg._from in "u083bdc9ca7257b41cd4d1de933a5ad8e":
                             khie.sendMention(to, "@! Brb , going to pee",' ', [msg._from])
                             restartBot()
                         else:pass
